@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Employee Salary</title>
 </head>
 <body>
 
-    <h1 class="max-auto">Employee Information</h1>
+    <h1>Employee Information</h1>
     <div class="emp-main-info">
         <div class="emp-salary">
             <label>Employee Name</label>
-            <input type="text" id="">
+            <input type="text">
         </div>
         <div class="emp-salary">
             <label>Hourly Salary</label>
-            <input type="text" id="">
+            <input type="text" class="hourly-wages">
         </div>
     </div>
 
@@ -29,33 +28,33 @@
         </div>
         <div class="grid-2">
             <label>Monday</label>
-            <input type="number">
-            <input type="number">
+            <input type="number" class="daily-working daily-working-1">
+            <input type="number" class="overtime-working overtime-working-1">
         </div>
         <div class="grid-3">
             <label>Tuesday</label>
-            <input type="number">
-            <input type="number">
+            <input type="number" class="daily-working daily-working-2">
+            <input type="number" class="overtime-working overtime-working-2">
         </div>
         <div class="grid-4">
             <label>Thursday</label>
-            <input type="number">
-            <input type="number">
+            <input type="number" class="daily-working daily-working-3">
+            <input type="number" class="overtime-working overtime-working-3">
         </div>
         <div class="grid-5">
             <label>Friday</label>
-            <input type="number">
-            <input type="number">
+            <input type="number" class="daily-working daily-working-4">
+            <input type="number" class="overtime-working overtime-working-4">
         </div>
         <div class="grid-6">
             <label>Saturday</label>
-            <input type="number">
-            <input type="number">
+            <input type="number" class="daily-working daily-working-5">
+            <input type="number" class="overtime-working overtime-working-5">
         </div>
         <div class="grid-7">
             <label>Sunday</label>
-            <input type="number">
-            <input type="number">
+            <input type="number" class="daily-working daily-working-6">
+            <input type="number" class="overtime-working overtime-working-6">
         </div>
     </div>
 
@@ -67,17 +66,27 @@
         </div>
         <div class="flex-2">
             <label>Hours</label>
-            <input type="number">
-            <input type="number">
+            <input type="number" class="calculate-daily-hours">
+            <input type="number" class="calculate-daily-salary">
         </div>
         <div class="flex-3">
             <label>Salary</label>
-            <input type="number">
-            <input type="number">
+            <input type="number" class="calculate-overtime-hours">
+            <input type="number" class="calculate-overtime-salary">
+            <label>15% Bonus</label>
         </div>
+        <div class="total">
+            <label>Total</label>
+            <input type="number" placeholder="0" class="total-salary">
+            <input type="number"placeholder="0" class="total-hours">
+        </div>
+        <div class="net-salary">
+            <label>Net Salary</label>
+            <input type="number" placeholder="0" class="net-salary">
+        </div>
+        <button>Calculate Salary</button>
     </div>
     
     <script src="script.js"></script>
-    <script src="bootstrap.min.js"></script>
 </body>
 </html>
